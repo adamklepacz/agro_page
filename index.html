@@ -1,530 +1,656 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Agroturystyka u Emilii - Siedlikow</title>
-		
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="agroturystyka, hotel, nocowanie, wakacje, majówka, wypoczynek, ostrzeszów, siedlików, antonin, motel, weekend, wieś, wioska">
+    <meta name="descripiton" content="Na skraju lasu, na prawdziwej polskiej wsi znajdziesz wspaniałe miejsce noclegowe. Tutaj wypoczniesz jak w 5-gwiazdkowym hotelu, posmakujesz swojskiego jedzenia i wsłuchasz się w śpiew ptaków. Agroturystyka u Emilii znajduje się w odległości 8 kilometrów od Ostrzeszowa, 24 kilometrów od Ostrowa Wlkp., 12 kilometrów od Antonina.">
+    <title>Agroturystyka u Emilii - Siedlikow</title>
+
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/jquery.bsPhotoGallery.js"></script>    
-		<script src="js/custom.js"></script>
-		<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdqJbWCfnm-4KREKfLS-0QxaIbeWOCaUE&callback=initMap">
+		<script src="2-js/bootstrap/bootstrap.min.js"></script>
+		<script src="2-js/jquery.bsPhotoGallery.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="2-js/scroll.js"></script>
+		<script src="2-js/custom.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdqJbWCfnm-4KREKfLS-0QxaIbeWOCaUE&callback=initMap">
 		</script>
+    <script></script>
 		<!-- JS end -->
-		
+
 		<!-- CSS stylesheets -->
-		<link href="css/normalize.css" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/fontello.css" rel="stylesheet">
-		<link href="css/jquery.bsPhotoGallery.css" rel="stylesheet">
-		<link href="css/custom.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-		
+		<link href="1-css/normalize.css" rel="stylesheet">
+    <link href="1-css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="1-css/fontello.css" rel="stylesheet">
+		<link href="1-css/jquery.bsPhotoGallery.css" rel="stylesheet">
+		<link href="1-css/custom.css" rel="stylesheet">
+		<link href="1-css/responsive.css" rel="stylesheet">
+    <!-- CSS end -->
+
 		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Amatica+SC:400,700&amp;subset=latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poppins&amp;subset=latin-ext" rel="stylesheet">
-		
-        <!-- [if lt IE9]> 
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head> 
-    <body>
-		<div class="main-wrapp">
-			<section class="section" id="intro">
-				<div class="intro-overlay">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="agro-intro">
-									<h2><span class="line"></span>			Agoroturystyka			<span class="line"></span></h2>
-									<h2><span class="line"></span>			"u Emilli"			<span class="line"></span></h2>
-								</div>
-								<!-- .agro-intro end -->
-							</div>
-							<!-- .col-md-12 end -->
-						</div>
-						<!-- .row end -->
-						<div class="row">
-							<nav class="navbar navbar-default navbar-custom">
-								<div class="container-fluid">
-									<div class="navbar-header">
-										<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
-									<div class="collapse navbar-collapse" id="mynavbar-content">
-										<ul class="nav navbar-nav">
-											<li><a id="link1" href="#about-us">O nas</a></li>
-											<li><a id="link2" href="#testimonial">Opinie</a></li>
-											<li><a id="link2" href="#gallery">Galeria</a></li>
-											<li><a id="link3" href="#pricelist">Cennik</a></li>
-											<li><a id="link5" href="#contact">Kontakt</a></li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<!-- .navbar end -->
-						</div>
-						<!-- .row end -->
-					</div>
-					<!-- .container-fluid end -->
-					<div class="meet-us">
-						<a href="#about-us">
-							<p>Poznaj nas</p>
-							<div class="bounce"><i class="fa icon-angle-double-down"></i></div>
-						</a>
-					</div>
-					<!-- .meet-us end -->
-				</div>
-				<!-- .intro-overlay end -->
-			</section>
-			<!-- section #intro end -->
-					
-			<section class="section" id="about-us">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="section-header">
-								<h2><span class="line-black"></span>			Na skraju lasu			<span class="line-black"></span></h2>
-								<span>NA PRAWDZIWEJ POLSKIEJ WSI</span>
-							</div>
-							<!-- .section-header end -->
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<div class="about-us-content">
-							<div class="col-md-4 col-sm-6 col-md-offset-2">
-								<p class="about-us-p">W pobliżu zielonych łąk i pachnących lasów, gdzie słychać odgłos ptaków i świerszczy cykanie, w malowniczych terenach południowej Wielkopolski, znajduje się gospodarstwo agroturystyczne<b> "U Emilii".</b></p><br><p class="about-us-p">Znajdziecie u nas upragnioną ciszę i wiejską sielankę z dala od miejskiego zgiełku. Zasmakujecie domowego chleba i serów, przyrządzonych wg starych babcinych receptur. Poleżycie na hamaku popijąc chłodne piwo, jedząc swojską kiełbasę z grilla i wsłuchacie się w odgłosy wsi. W wakacje spragnieni wrażeń - udacie się na wiejską biesadę, która was rozbawi. Zimą, przepięknie ośnieżone lasy zaproszą na spacer i zachwycą was wyjątkowymi widokami! </p>
-							</div>
-							<!-- .col-md-4 end -->
-							<div class="col-md-4 col-sm-6">
-								<div class="icon-quote-left"></div>
-								<p class="about-us-quote">Wrócę na wieś i będę żył spokojnie. Skombinuje się jakiś zasiłek, może będzie nudno, ale bezpiecznie. Żadnych inkwizytorów, żadnych pogańskich kapłanek, żadnych szalonych dziadków...<br><br><strong>Andrzej Pilipiuk</strong></p>
-							</div>
-							<!-- .col-md-4 end -->
-							<div class="clearer"></div>
-						</div>
-						<!-- .about-us-content -->
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="section-header">
-								<h2><span class="line-black"></span>			Udogodnienia			<span class="line-black"></span></h2>
-							</div>
-							<!-- .section-header end -->
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="activities">
-								<ul>
-									<li><p><i class="icon-food"></i></p><p>Swojskie jedzenie</p></li>
-									<li><p><i class="icon-child"></i></p><p>Plac<br>zabaw</p></li>
-									<li><p><i class="icon-guidedog"></i></p><p>Akceptacja zwierzaków</p></li>
-									<li><p><i class="icon-fire-1"></i></p><p>Plac<br>na grilla</p></li>
-									<li><p><i class="icon-bicycle"></i></p><p>Wypożyczalnia rowerów</p></li>
-									<li><p><i class="icon-leaf"></i></p><p>Bliskość<br>natury</p></li>
-									<li><p><i class="icon-wifi"></i></p><p>Darmowe<br>wifi</p></li>
-									<li><p><i class="icon-location"></i></p><p>Prawdziwa wieś</p></li>
-									<div class="clearer"></div>
-								</ul>
-							</div>
-							<!-- .activities end -->
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-			<!-- section #about-us end -->
-			
-			<section class="section" id="testimonial">
-				<div class="testimonial-overlay">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h2 class="h2-testimonial"><span class="line"></span>			Opinie gości			<span class="line"></span>
-								</h2>
-								<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
-									<!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
-										<li data-target="#carousel-testimonial" data-slide-to="1"></li>
-										<li data-target="#carousel-testimonial" data-slide-to="2"></li>
-									</ol>							
+    <!-- Google fonts end -->
 
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner" role="listbox">
-										<div class="item active text-center">
-											<img src="img/customers/customer1.png" alt="..." class="center-block">
-										 	<div class="testimonial-caption">
-												<h2>Magda D.</h2>
-												<p>" Bardzo polecam na wypad grupą. Plac grillowy gdzie można urządzić imprezę z daniami z rusztu to coś co spełni oczekiwania każdego! Przemili i wyrozumiali właściciele. Na pewno wrócimy na kolejny weekend majowy. "</p>
-										  	</div>
-										</div>
-										<!-- .item end -->
-										<div class="item text-center">
-											<img src="img/customers/customer2.png" alt="..." class="center-block">
-										 	<div class="testimonial-caption">
-												<h2>Dariusz U.</h2>
-												<p>" W spokoju i miłej atmosferze można odpocząć po trudach podróży. Bardzo gościnni gospodarze, poczęstowali mnie swojskim chlebem. Polecam miejsce również na dłuższy wypoczynekz rodziną. Gospodyni serwuje domowe posiłki. "</p>
-										  </div>
-										</div>
-										<!-- .item end -->
-										<div class="item text-center">
-										  <img src="img/customers/customer3.png" alt="..." class="center-block">
-										  <div class="testimonial-caption">
-											  <h2>Robert T.</h2>
-											  <p>" Pokoje jak i całe otoczenie były czyściutkie. Nasz niespełna 2 letni  synek był zachwycony obecnością zwierzątek w gospodarstwie. Poza tym oczywistym plusem jest plac zabaw  oraz duży ogrodzony teren do biegania. Polecamy na pobyt z dziećmi. "</p>
-										  </div>
-										</div>
-										<!-- .item end -->
-									</div>
-									<!-- .carousel-inner end -->
-									
-									<!-- Controls -->
-									<a class="left carousel-control" href="#carousel-testimonial" role="button" data-slide="prev">
-										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<!-- a end -->
-									<a class="right carousel-control" href="#carousel-testimonial" role="button" data-slide="next">
-										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-										<span class="sr-only">Next</span>
-									</a>
-									<!-- a end -->
-								</div>
-								<!-- #carousel-testimonial end -->
-							</div>
-							<!-- .col-md-12 -->
-						</div>
-						<!-- .row end -->
-					</div>
-					<!-- .container end -->
-				</div>
-				<!-- .testimonial-overlay end -->
-			</section>
-			<!-- section #testimonial end -->
-			
-			<section class="section" id="gallery">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="section-header">
-								<h2><span class="line-black"></span>			Galeria			<span class="line-black"></span></h2>
-							</div>
-							<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed. Aliquam ac sem eget erat facilisis scelerisque.</p>
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<div class="col-md-12">
-							<ul class="first">
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal1.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal19.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal4.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal5.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal6.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal7.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal8.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal16.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal10.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal11.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal12.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal13.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal17.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal9.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal15.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal14.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal18.jpg">
-								</li>
-								<li>
-									<img alt="Podpis do zdjecia"  src="img/gal3.jpg">
-								</li>
-							</ul>
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-				<div class="clearer"></div>
-			</section>
-			<!-- section #gallery end -->
-				
-			<section class="section" id="pricelist">
-				<div class="pricelist-overlay">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="section-header">
-									<h2><span class="line-black"></span>			Cennik			<span class="line-black"></span></h2>
-								</div>
-								<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed.</p>
-							</div>
-							<!-- .col-md-12 end -->
-						</div>
-						<!-- .row end -->
-						<div class="row">
-							<div class="plan-options">
-								<div class="col-md-3 col-sm-6 col-xs-12">
-									<div class="plan-container">
-										<div class="plan-title">
-											<h3><b>1 NOC</b></h3>
-											<span>tylko</span>
-										</div>
-										<div class="plan-price">
-											<span class="plan-amount">35</span><br>
-											<span>zł za osobę</span>
-										</div>
-										<div class="plan-list">
-											<span>udogodnienia w cenie</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-xs-12">
-									<div class="plan-container">
-										<div class="plan-title">
-											<h3><b>2 NOCE</b></h3>
-											<span>i więcej</span>
-										</div>
-										<div class="plan-price">
-											<span class="plan-amount">30</span><br>
-											<span>zł za osobę</span>
-										</div>
-										<div class="plan-list">
-											<span>udogodnienia w cenie</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-xs-12">
-									<div class="plan-container">
-										<div class="plan-title">
-											<h3><b>FIRMY</b></h3>
-											<span>długoterminowo</span>
-										</div>
-										<div class="plan-price">
-											<span class="plan-amount">od 20</span><br>
-											<span>zł za osobę</span>
-										</div>
-										<div class="plan-list">
-											<span>udogodnienia w cenie</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6 col-xs-12">
-									<div class="plan-container">
-										<div class="plan-title">
-											<h3><b>WYŻYWIENIE</b></h3>
-											<span>do wyboru</span>
-										</div>
-										<div class="plan-price">
-											<span><b>Śniadanie</b></span><i></i><br>
-											<span><b>Obiad</b></span><i></i><br>
-											<span><b>Kolacja</b></span><i></i>
-										</div>
-										<div class="plan-list">
-											<span>ceny do uzgodnienia</span>
-										</div>
-									</div>
-								</div>
-								<div class="clearer"></div>
-							</div>
-							<!-- .plan-options end -->
-						</div>
-						<!-- .row end -->
-					</div>
-					<!-- .container end -->
-				</div>
-				<!-- .pricelist-overlay end -->
-			</section>
-			<!-- section #pricelist end -->
-			
-			<section class="section" id="contact">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="section-header">
-								<h2><span class="line-black"></span>			Kontakt/Dojazd			<span class="line-black"></span></h2>
-							</div>
-							<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed.</p>
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<div class="contact-wrapper">
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<div class="contact-content">
-									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-									<h2>Rezerwacja</h2>
-									<p>Zadzwoń do nas lub napisz:<br>K: +48 603 647 053<br>T: 62 730 75 34<br><a href="mailto:adamklepacz92@gmail.com?subject=Zapytanie o pobyt">E: agro@gmail.com</a></p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<div class="contact-content">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-									<h2>Doba</h2>
-									<p>Doba zaczyna się<br> w dniu przyjazdu<br> o godz. 14:00, a kończy o godz. 11:00 w dniu odjazdu.</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<div class="contact-content">
-									<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
-									<h2>Zaliczka</h2>
-									<p>Potwierdzeniem rezerwacji jest wpłata 20% wartości pobytu na konto: 77 1090 1173 0000 0001 3166 4152</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12">
-								<div class="contact-content">
-									<a href="http://bit.ly/2pUaTYF" target="_blank">
-										<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-										<h2>Adres</h2>
-										<p>Agroturystyka "u Emilii"<br> Emilia Klepacz<br>Siedlikow 191<br>63-500 Ostrzeszow<br></p><br>
-									</a>
-								</div>
-							</div>
-							<div class="clearer"></div>
-						</div>
-						<!-- .contact-wrapper -->
-					</div>
-					<!-- .row end -->	
-				</div>
-				<!-- .container end -->
-				<div id="map"></div>
-				<!-- #map end -->
-			</section>
-			<!-- section #contact end -->
-			
-			<section class="section" id="info">
-				<div class="container">
-					<div class="row">
-						<div class="portals-options">
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<div class="portals-content">
-									<a href="https://www.eholiday.pl/noclegi-zr1506.html" target="_blank">
-										<span class="icon-website"></span>
-										<p>eholiday</p>
-									</a>
-								</div>	
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<div class="portals-content">
-									<a href="http://www.nocowanie.pl/noclegi/ostrzeszow/agroturystyka/116466/" target="_blank">
-										<span class="icon-th"></span>
-										<p>nocowanie</p>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<div class="portals-content">
-									<a href="http://meteor-turystyka.pl/agro-siedlikow,siedlikow.html" target="_blank">
-										<span class="icon-th-list"></span>
-										<p>meteor</p>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6">
-								<div class="portals-content">
-									<a href="https://aboutme.google.com/b/107259824071296868013/" target="_blank">
-										<span class="icon-googleplus"></span>
-										<p>google +</p>
-									</a>
-								</div>
-							</div>
-							<div class="clearer"></div>
-						</div>
-						<!-- portals-options end -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-				<div class="container-fluid container-fluid-info">
-					<div class="row container-fludi-info-row">
-						<div class="info-options">
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<p><b>Kontakt</b></p>
-								<p>Emilia Klepacz<br>K: +48 603 647 053<br>T: 62 730-75-34<br><a class="info-email" href="mailto:adamklepacz92@gmail.com?subject=Zapytanie o pobyt">E: agro@gmail.com</a></p>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<p><b>Adres</b></p>
-								<p>Agrogospodarstwo "u Emilii"<br>Siedlikow 191<br>63-500 Ostrzeszow</p>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<p><b>Nawigacja</b></p>
-								<!-- Gonna be ul list here -->
-								<p>Opinie<br>Galeria<br>Cennik<br>Kontakt/Dojazd</p>
-							</div>
-							<div class="clearer"></div>
-						</div>
-						<!-- .info-option end -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container-fluid end -->
-			</section>
-			<!-- section #info end -->
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<p>2017 &copy; <a href="https://www.linkedin.com/in/adam-klepacz/" target="_blank"><b>Adam Klepacz </b>Web Development</a></p>
-						</div>
-						<!-- .col-md-12 end -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</footer>
-			<!-- footer end -->
-		</div>
-		<!-- .main-wrapp end -->	
-	</body>
+    <!-- [if lt IE9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="main-wrapp">
+  		<section class="section" id="intro">
+  			<div class="intro-overlay">
+  				<div class="container-fluid">
+  					<div class="row">
+  						<div class="col-md-12 col-sm-12 col-xs-12">
+  							<div class="agro-intro">
+  								<h2><span class="line"></span>			Agoroturystyka			<span class="line"></span></h2>
+  								<h2><span class="line"></span>			"u Emilli"			<span class="line"></span></h2>
+  							</div>
+  							<!-- .agro-intro end -->
+  						</div>
+  						<!-- .col-md-12 end -->
+  					</div>
+  					<!-- .row end -->
+  					<div class="row">
+  						<nav class="navbar navbar-default navbar-custom">
+  							<div class="container-fluid">
+  								<div class="navbar-header">
+  									<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+  										<span class="icon-bar"></span>
+  										<span class="icon-bar"></span>
+  										<span class="icon-bar"></span>
+  									</button>
+  								</div>
+                  <!-- .navbar-header end -->
+  								<div class="collapse navbar-collapse" id="mynavbar-content">
+  									<ul class="nav navbar-nav">
+  										<li><a id="link1" href="#about-us">O nas</a></li>
+  										<li><a id="link2" href="#testimonial">Opinie</a></li>
+  										<li><a id="link3" href="#gallery">Galeria</a></li>
+  										<li><a id="link4" href="#pricelist">Cennik</a></li>
+  										<li><a id="link5" href="#contact">Kontakt</a></li>
+  									</ul>
+  								</div>
+  							</div>
+                <!-- .container-fluid end -->
+  						</nav>
+  						<!-- .navbar end -->
+  					</div>
+  					<!-- .row end -->
+  				</div>
+  				<!-- .container-fluid end -->
+  				<div class="meet-us">
+  					<a id="link6" href="#about-us">
+  						<p>Poznaj nas</p>
+  						<div class="bounce"><i class="fa icon-angle-double-down"></i></div>
+  					</a>
+  				</div>
+  				<!-- .meet-us end -->
+  			</div>
+  			<!-- .intro-overlay end -->
+  		</section>
+  		<!-- section #intro end -->
+
+  		<section class="section" id="about-us">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12 col-sm-12 col-xs-12">
+  						<div class="section-header">
+  							<h2><span class="line-black"></span>			Na skraju lasu			<span class="line-black"></span></h2>
+  							<span>NA PRAWDZIWEJ POLSKIEJ WSI</span>
+  						</div>
+  						<!-- .section-header end -->
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  				<div class="row">
+  					<div class="about-us-content">
+  						<div class="about-us-paragraph">
+  							<div class="col-md-4 col-sm-6 col-md-offset-2">
+  								<p class="about-us-p">W pobliżu zielonych łąk i pachnących lasów, gdzie słychać odgłos ptaków i świerszczy cykanie, w malowniczych terenach południowej Wielkopolski, znajduje się gospodarstwo agroturystyczne<b> "U Emilii".</b></p><br><p class="about-us-p">Znajdziecie u nas upragnioną ciszę i wiejską sielankę z dala od miejskiego zgiełku. Zasmakujecie domowego chleba i serów, przyrządzonych wg starych babcinych receptur. Poleżycie na hamaku popijąc chłodne piwo, jedząc swojską kiełbasę z grilla i wsłuchacie się w odgłosy wsi. W wakacje spragnieni wrażeń - udacie się na wiejską biesadę, która was rozbawi. Zimą, przepięknie ośnieżone lasy zaproszą na spacer i zachwycą was wyjątkowymi widokami! </p>
+  							</div>
+  							<!-- .col-md-4 end -->
+  						</div>
+  						<!-- .about-us-paragraph end -->
+  						<div class="about-us-quote">
+  							<div class="col-md-4 col-sm-6">
+  								<div class="icon-quote-left"></div>
+  								<p class="about-us-quote-p">Wrócę na wieś i będę żył spokojnie. Skombinuje się jakiś zasiłek, może będzie nudno, ale bezpiecznie. Żadnych inkwizytorów, żadnych pogańskich kapłanek, żadnych szalonych dziadków...<br><br><strong>Andrzej Pilipiuk</strong></p>
+  							</div>
+  							<!-- .col-md-4 end -->
+  						</div>
+  						<!-- .about-us-quote end -->
+  						<div class="clearer"></div>
+  					</div>
+  					<!-- .about-us-content -->
+  				</div>
+  				<!-- .row end -->
+  				<div class="row">
+  					<div class="col-md-12">
+  						<div class="section-header">
+  							<h2><span class="line-black"></span>			Udogodnienia			<span class="line-black"></span></h2>
+  						</div>
+  						<!-- .section-header end -->
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  				<div class="row">
+  					<div class="col-md-12">
+  						<div class="activities">
+  							<ul>
+  								<li><p><i class="icon-food"></i></p><p>Swojskie jedzenie</p></li>
+  								<li><p><i class="icon-child"></i></p><p>Plac<br>zabaw</p></li>
+  								<li><p><i class="icon-guidedog"></i></p><p>Akceptacja zwierzaków</p></li>
+  								<li><p><i class="icon-fire-1"></i></p><p>Plac<br>na grilla</p></li>
+  								<li><p><i class="icon-bicycle"></i></p><p>Wypożyczalnia rowerów</p></li>
+  								<li><p><i class="icon-leaf"></i></p><p>Bliskość<br>natury</p></li>
+  								<li><p><i class="icon-wifi"></i></p><p>Darmowe<br>wifi</p></li>
+  								<li><p><i class="icon-location"></i></p><p>Prawdziwa wieś</p></li>
+  								<div class="clearer"></div>
+  							</ul>
+  						</div>
+  						<!-- .activities end -->
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container end -->
+  		</section>
+  		<!-- section #about-us end -->
+
+  		<section class="section" id="testimonial">
+  			<div class="testimonial-overlay">
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-md-12">
+                <div class="section-header">
+  							  <h2 class="h2-testimonial"><span class="line"></span>			Opinie gości			<span class="line"></span>
+  							  </h2>
+                </div>
+  							<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+  								<!-- Indicators -->
+  								<ol class="carousel-indicators">
+  									<li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+  									<li data-target="#carousel-testimonial" data-slide-to="1"></li>
+  									<li data-target="#carousel-testimonial" data-slide-to="2"></li>
+  								</ol>
+
+  								<!-- Wrapper for slides -->
+  								<div class="carousel-inner" role="listbox">
+  									<div class="item active text-center">
+  										<img src="3-img/customers/customer1.png" alt="..." class="center-block">
+  									 	<div class="testimonial-caption">
+  											<h2>Magda D.</h2>
+  											<p>" Bardzo polecam na wypad grupą. Plac grillowy gdzie można urządzić imprezę z daniami z rusztu to coś co spełni oczekiwania każdego wypoczywającego! Przemili i wyrozumiali właściciele. Na pewno wrócimy na kolejny weekend majowy. "</p>
+  									  	</div>
+  									</div>
+  									<!-- .item end -->
+  									<div class="item text-center">
+  										<img src="3-img/customers/customer2.png" alt="..." class="center-block">
+  									 	<div class="testimonial-caption">
+  											<h2>Dariusz U.</h2>
+  											<p>" W spokoju i miłej atmosferze można odpocząć po trudach podróży. Bardzo gościnni gospodarze, poczęstowali mnie swojskim chlebem. Polecam miejsce również na dłuższy wypoczynekz rodziną. Gospodyni serwuje domowe posiłki. "</p>
+  									  </div>
+  									</div>
+  									<!-- .item end -->
+  									<div class="item text-center">
+  									  <img src="3-img/customers/customer3.png" alt="..." class="center-block">
+  									  <div class="testimonial-caption">
+  										  <h2>Robert T.</h2>
+  										  <p>" Pokoje jak i całe otoczenie były czyściutkie. Nasz niespełna 2 letni  synek był zachwycony obecnością zwierzątek w gospodarstwie. Poza tym oczywistym plusem jest plac zabaw  oraz duży ogrodzony teren do biegania. Polecamy na pobyt z dziećmi. "</p>
+  									  </div>
+  									</div>
+  									<!-- .item end -->
+  								</div>
+  								<!-- .carousel-inner end -->
+
+  								<!-- Controls -->
+  								<a class="left carousel-control" href="#carousel-testimonial" role="button" data-slide="prev">
+  									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  									<span class="sr-only">Previous</span>
+  								</a>
+  								<!-- a end -->
+  								<a class="right carousel-control" href="#carousel-testimonial" role="button" data-slide="next">
+  									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  									<span class="sr-only">Next</span>
+  								</a>
+  								<!-- a end -->
+  							</div>
+  							<!-- #carousel-testimonial end -->
+  						</div>
+  						<!-- .col-md-12 -->
+  					</div>
+  					<!-- .row end -->
+  				</div>
+  				<!-- .container end -->
+  			</div>
+  			<!-- .testimonial-overlay end -->
+  		</section>
+  		<!-- section #testimonial end -->
+
+  		<section class="section" id="gallery">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<div class="section-header">
+  							<h2><span class="line-black"></span>			Galeria			<span class="line-black"></span></h2>
+  						</div>
+  						<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed. Aliquam ac sem eget erat facilisis scelerisque.</p>
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  				<div class="row">
+  					<div class="col-md-12">
+  						<ul class="first">
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal1.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal19.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal4.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal5.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal6.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal7.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal8.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal16.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal10.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal11.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal12.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal13.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal17.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal9.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal15.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal14.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal18.jpg">
+  							</li>
+  							<li>
+  								<img alt="Podpis do zdjecia"  src="3-img/gallery/gal3.jpg">
+  							</li>
+  						</ul>
+              <!-- .first end -->
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container end -->
+  			<div class="clearer"></div>
+  		</section>
+  		<!-- section #gallery end -->
+
+  		<section class="section" id="pricelist">
+  			<div class="pricelist-overlay">
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-md-12">
+  							<div class="section-header">
+  								<h2><span class="line-black"></span>			Cennik			<span class="line-black"></span></h2>
+  							</div>
+  							<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed.</p>
+  						</div>
+  						<!-- .col-md-12 end -->
+  					</div>
+  					<!-- .row end -->
+  					<div class="row">
+  						<div class="plan-options">
+  							<div class="col-md-3 col-sm-6 col-xs-12">
+  								<div class="plan-container">
+  									<div class="plan-title">
+  										<div class="plan-title-content">
+  											<h3><b>1 NOC</b></h3>
+  											<span>tylko</span>
+  										</div>
+                      <!-- .plan-title end -->
+  									</div>
+  									<div class="plan-price">
+  										<div class="plan-price-content">
+  											<span class="plan-amount">35</span><br>
+  											<span>zł za osobę</span>
+  										</div>
+  									</div>
+                    <!-- .plan-price end -->
+  									<div class="plan-list">
+  										<div class="plan-list-content">
+  											<span>udogodnienia w cenie</span>
+  										</div>
+  									</div>
+                    <!-- .plan-list-content -->
+  								</div>
+                  <!-- .plan-container -->
+  							</div>
+                <!-- .col-md-3 end -->
+  							<div class="col-md-3 col-sm-6 col-xs-12">
+  								<div class="plan-container">
+  									<div class="plan-title">
+  										<div class="plan-title-content">
+  											<h3><b>2 NOCE</b></h3>
+  											<span>i więcej</span>
+  										</div>
+  									</div>
+                    <!-- plan-title-content -->
+  									<div class="plan-price">
+  										<div class="plan-price-content">
+  											<span class="plan-amount">30</span><br>
+  											<span>zł za osobę</span>
+  										</div>
+  									</div>
+                    <!-- .plan-price -->
+  									<div class="plan-list">
+  										<div class="plan-list-content">
+  											<span>udogodnienia w cenie</span>
+  										</div>
+  									</div>
+                    <!-- .plan-list end -->
+  								</div>
+                  <!-- .plan-container -->
+  							</div>
+                <!-- .col-md-3 end -->
+  							<div class="col-md-3 col-sm-6 col-xs-12">
+  								<div class="plan-container">
+  									<div class="plan-title">
+  										<div class="plan-title-content">
+  											<h3><b>FIRMY</b></h3>
+  											<span>długoterminowo</span>
+  										</div>
+  									</div>
+                    <!-- .plan-title-content end -->
+  									<div class="plan-price">
+  										<div class="plan-price-content">
+  											<span>od</span>
+  											<span class="plan-amount">20</span><br>
+  											<span>zł za osobę</span>
+  										</div>
+  									</div>
+                    <!-- .plan-price-content end -->
+  									<div class="plan-list">
+  										<div class="plan-list-content">
+  											<span>udogodnienia w cenie</span>
+  										</div>
+  									</div>
+                    <!-- .plan-list-content end -->
+  								</div>
+                  <!-- .plan-container end -->
+  							</div>
+                <!-- .col-md-3 end -->
+  							<div class="col-md-3 col-sm-6 col-xs-12">
+  								<div class="plan-container">
+  									<div class="plan-title">
+  										<div class="plan-title-content">
+  											<h3><b>WYŻYWIENIE</b></h3>
+  											<span>do wyboru</span>
+  										</div>
+                      <!-- .plan-title-content end -->
+  									</div>
+                    <!-- plan-title end -->
+  									<div class="plan-price">
+  										<div class="plan-price-content">
+  											<span><b>Śniadanie</b></span><i></i><br>
+  											<span><b>Obiad</b></span><i></i><br>
+  											<span><b>Kolacja</b></span><i></i>
+  										</div>
+                      <!-- .plan-price-content end -->
+  									</div>
+                    <!-- .plan-price end -->
+  									<div class="plan-list">
+  										<div class="plan-list-content">
+  											<span>ceny do uzgodnienia</span>
+  										</div>
+                      <!-- .plan-list-content end -->
+  									</div>
+                    <!-- .plan-list end -->
+  								</div>
+                  <!-- .plan container -->
+  							</div>
+                <!-- .col-md-3 end -->
+  							<div class="clearer"></div>
+  						</div>
+  						<!-- .plan-options end -->
+  					</div>
+  					<!-- .row end -->
+  				</div>
+  				<!-- .container end -->
+  			</div>
+  			<!-- .pricelist-overlay end -->
+  		</section>
+  		<!-- section #pricelist end -->
+
+  		<section class="section" id="contact">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<div class="section-header">
+  							<h2><span class="line-black"></span>			Kontakt/Dojazd			<span class="line-black"></span></h2>
+  						</div>
+  						<p class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in blandit risus. Donec sagittis ornare leo, laoreet elementum ligula lacinia at. Mauris lobortis luctus turpis, et dapibus erat dignissim sed.</p>
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  				<div class="row">
+  					<div class="contact-wrapper">
+  						<div class="col-md-3 col-sm-6 col-xs-12">
+  							<div class="contact-container">
+  								<div class="contact-container-header">
+  									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+  									<h2>Rezerwacja</h2>
+  								</div>
+                  <!-- contact-container-header end -->
+  								<div class="contact-container-content">
+  									<p>Zadzwoń do nas lub napisz:<br><a href="tel:+48603647053">K: +48 603 647 053</a><br>T: 62 730 75 34<br><a href="mailto:adamklepacz92@gmail.com?subject=Zapytanie o pobyt">E: agro@gmail.com</a></p>
+  								</div>
+                  <!-- .contact-container-content end -->
+  							</div>
+                <!-- .contact-container -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-12">
+  							<div class="contact-container">
+  								<div class="contact-container-header">
+  									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+  									<h2>Doba</h2>
+  								</div>
+                  <!-- .contact-container-header end -->
+  								<div class="contact-container-content">
+  									<p>Doba zaczyna się<br> w dniu przyjazdu o godzinie 14:00, a kończy o godzinie 	11:00 w dniu odjazdu.</p>
+  								</div>
+                  <!-- .contact-container-content end -->
+  							</div>
+                <!-- .contact-container end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-12">
+  							<div class="contact-container">
+  								<div class="contact-container-header">
+  									<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+  									<h2>Zaliczka</h2>
+  								</div>
+                  <!-- .contact-container-header end -->
+  								<div class="contact-container-content">
+  									<p>Potwierdzeniem rezerwacji jest wpłata 20% wartości pobytu na konto: 77 1090 1173 0000 0001 3166 4152</p>
+  								</div>
+                  <!-- .contact-container-content end -->
+  							</div>
+                <!-- .contact-container end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-12">
+  							<div class="contact-container">
+  								<a href="http://bit.ly/2pUaTYF" target="_blank">
+  									<div class="contact-container-header">
+  										<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+  										<h2>Adres</h2>
+  									</div>
+                    <!-- .contact-container-header end -->
+  									<div class="contact-container-content">
+  										<p>Agroturystyka "u Emilii"<br> Emilia Klepacz<br>Siedlików 191<br>63-500 Ostrzeszów</p>
+  									</div>
+                    <!-- .contact-container-content end -->
+  								</a>
+                  <!-- a tag end -->
+  							</div>
+                <!-- .contact-container end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="clearer"></div>
+  					</div>
+  					<!-- .contact-wrapper -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container end -->
+  			<div id="map"></div>
+  			<!-- #map end -->
+  		</section>
+  		<!-- section #contact end -->
+
+  		<section class="section" id="info">
+  			<div class="container">
+  				<div class="row">
+  					<div class="portals-options">
+  						<div class="col-md-3 col-sm-6 col-xs-6">
+  							<div class="portals-content">
+  								<a href="https://www.eholiday.pl/noclegi-zr1506.html" target="_blank">
+  									<span class="icon-website"></span>
+  									<p>eholiday</p>
+  								</a>
+  							</div>
+                <!-- .portals-content end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-6">
+  							<div class="portals-content">
+  								<a href="http://www.nocowanie.pl/noclegi/ostrzeszow/agroturystyka/116466/" target="_blank">
+  									<span class="icon-th"></span>
+  									<p>nocowanie</p>
+  								</a>
+  							</div>
+                <!-- portals-content end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-6">
+  							<div class="portals-content">
+  								<a href="http://meteor-turystyka.pl/agro-siedlikow,siedlikow.html" target="_blank">
+  									<span class="icon-th-list"></span>
+  									<p>meteor</p>
+  								</a>
+  							</div>
+                <!-- .portals-content end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="col-md-3 col-sm-6 col-xs-6">
+  							<div class="portals-content">
+  								<a href="https://aboutme.google.com/b/107259824071296868013/" target="_blank">
+  									<span class="icon-googleplus"></span>
+  									<p>google +</p>
+  								</a>
+  							</div>
+                <!-- portals-content end -->
+  						</div>
+              <!-- .col-md-3 end -->
+  						<div class="clearer"></div>
+  					</div>
+  					<!-- portals-options end -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container end -->
+  			<div class="container-fluid container-fluid-info">
+  				<div class="row">
+  					<div class="info-options">
+  						<div class="col-md-4 col-sm-4 col-xs-12">
+  							<p><b>Kontakt</b></p>
+  							<p>Emilia Klepacz<br>K: +48 603 647 053<br>T: 62 730-75-34<br><a class="info-email" href="mailto:adamklepacz92@gmail.com?subject=Zapytanie o pobyt">E: agro@gmail.com</a></p>
+  						</div>
+              <!-- .col-md-4 end -->
+  						<div class="col-md-4 col-sm-4 col-xs-12">
+  							<p><b>Adres</b></p>
+  							<p>Agrogospodarstwo "u Emilii"<br>Siedlikow 191<br>63-500 Ostrzeszow</p>
+  						</div>
+              <!-- .col-md-4 end -->
+  						<div class="col-md-4 col-sm-4 col-xs-12">
+  							<p><b>Nawigacja</b></p>
+  							<!--  Ul  nav list here -->
+                <ul class="info-navigation">
+                  <a href="#testimonial" id="link7">
+                    <li>Opnie</li>
+                  </a>
+                  <a href="#gallery" id="link8">
+                    <li>Galeria</li>
+                  </a>
+                  <a href="#pricelist" id="link9">
+                    <li>Cennik</li>
+                  </a>
+                  <a href="#contact" id="link10">
+                    <li>Kontakt</li>
+                  </a>
+                </ul>
+                <!-- .info-navigation end -->
+  						</div>
+              <!-- .col-md-4 end -->
+  						<div class="clearer"></div>
+  					</div>
+  					<!-- .info-option end -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container-fluid end -->
+  		</section>
+  		<!-- section #info end -->
+
+  		<footer class="section">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<p>2017 &copy; <a href="https://www.linkedin.com/in/adam-klepacz/" target="_blank"><b>Adam Klepacz </b>Web Development</a></p>
+  					</div>
+  					<!-- .col-md-12 end -->
+  				</div>
+  				<!-- .row end -->
+  			</div>
+  			<!-- .container end -->
+  		</footer>
+  		<!-- footer end -->
+
+  	</div>
+  	<!-- .main-wrapp end -->
+  </body>
 </html>
