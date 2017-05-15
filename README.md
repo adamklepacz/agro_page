@@ -9,5 +9,6 @@ HTML5 - <b>ready</b> <br>
 CSS3 - to refactoring <br>
 JS/jQuery -<b>ready</b> <br>
 Folder structure - <b>ready</b> <br>
+.
 
 Adam Klepacz - 2017 
